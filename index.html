@@ -3,54 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Yoonjin Shin product design portfolio" />
+    <meta name="description" content="UX designer Yoonjin Shin portfolio" />
     <title>Yoonjin Shin · Portfolio</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <main class="portfolio-page">
+    <main class="home-page">
       <header class="site-header">
-        <a class="site-name" href="./index.html">YOONJIN SHIN</a>
-        <a class="all-projects" href="#projects">All Project</a>
+        <a class="site-logo" href="./index.html">YOONJIN SHIN</a>
+        <nav aria-label="Main navigation"><a href="#projects">All Projects</a><a href="#resume">Resume</a></nav>
       </header>
-
-      <section class="intro" aria-labelledby="intro-title">
-        <h1 id="intro-title">I AM<br />YOONJIN SHIN</h1>
+      <section class="home-intro" aria-labelledby="intro-title">
+        <h1 id="intro-title">Hi 👋<br />My name is <strong>Yoonjin.</strong><br />I’m an <strong>innovative</strong> UX designer<strong>.</strong></h1>
       </section>
-
-      <section class="projects" id="projects" aria-label="All projects">
-        <a class="project-card project-link" href="./mealing.html" aria-label="View the Mealing project">
-          <span class="project-image" aria-hidden="true"></span>
-          <span class="project-copy">
-            <strong>MEALING</strong>
-            <span>Home-cooked Food SNS APP Building</span>
-          </span>
-        </a>
-
-        <article class="project-card">
-          <div class="project-image" aria-hidden="true"></div>
-          <div class="project-copy"><strong>TITLE</strong><span>Sub-title</span></div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-image" aria-hidden="true"></div>
-          <div class="project-copy"><strong>TITLE</strong><span>Sub-title</span></div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-image" aria-hidden="true"></div>
-          <div class="project-copy"><strong>TITLE</strong><span>Sub-title</span></div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-image" aria-hidden="true"></div>
-          <div class="project-copy"><strong>TITLE</strong><span>Sub-title</span></div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-image" aria-hidden="true"></div>
-          <div class="project-copy"><strong>TITLE</strong><span>Sub-title</span></div>
-        </article>
+      <section class="project-grid" id="projects" aria-label="All projects">
+        <article class="project-card placeholder-card"><div class="card-visual"></div><h2>(Kakao Map) Theme map</h2><p>Home-cooked Food SNS APP Building</p></article>
+        <article class="project-card placeholder-card"><div class="card-visual"></div><h2>(Kakao Map) Searching UX/UI</h2><p>sub-title</p></article>
+        <a class="project-card linked-card mealing-card" href="./mealing.html" aria-label="View the Mealing project"><div class="card-visual"><img src="./assets/n4019-imgRectangle579.png" alt="MEALING app project visual" /></div><h2>Mealing</h2><p>Home-cooked Food SNS APP Building</p></a>
+        <a class="project-card linked-card luggage-card" href="./luggage.html" aria-label="View the LuggEasy Scale project"><div class="card-visual"><img src="./assets/n4019-img1.png" alt="LuggEasy Scale product visual" /></div><h2>LuggEasy Scale</h2><p>sub-title</p></a>
+        <article class="project-card placeholder-card"><div class="card-visual"></div><h2>MEALING</h2><p>Home-cooked Food SNS APP Building</p></article>
+        <article class="project-card placeholder-card"><div class="card-visual"></div><h2>Title</h2><p>sub-title</p></article>
       </section>
     </main>
   </body>
