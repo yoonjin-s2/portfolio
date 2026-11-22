@@ -75,9 +75,9 @@ img { display: block; max-width: 100%; -webkit-user-drag: none; user-select: non
 .lugg-meta dd { margin: 0; font-weight: 300; }
 .lugg-label { position: absolute; left: 120px; margin: 0; font-size: 15px; font-weight: 700; line-height: 25px; }
 .background-label { top: 1000px; }
-.background-copy { position: absolute; top: 1043px; left: 120px; width: 1200px; margin: 0; font-size: 24px; font-weight: 300; line-height: 35px; }
+.background-copy { position: absolute; top: 1043px; left: 120px; width: 1200px; margin: 0; font-size: 20px; font-weight: 300; line-height: 35px; }
 .research-label { top: 1298px; }
-.research-copy { position: absolute; top: 1341px; left: 120px; width: 540px; font-size: 24px; font-weight: 300; line-height: 35px; }
+.research-copy { position: absolute; top: 1341px; left: 120px; width: 540px; font-size: 20px; font-weight: 300; line-height: 35px; }
 .research-copy p { margin: 0; }
 .method-photo { position: absolute; width: 111px; height: 111px; overflow: hidden; border-radius: 50%; }
 .method-photo img { position: absolute; width: 100%; height: 100%; max-width: none; object-fit: cover; }
@@ -90,15 +90,15 @@ img { display: block; max-width: 100%; -webkit-user-drag: none; user-select: non
 .method-four img { object-position: 50% 50%; }
 .method-text { position: absolute; left: 887px; width: 510px; }
 .method-text h3 { margin: 0; font-size: 20px; font-weight: 300; line-height: normal; }
-.method-text ul { margin: 10px 0 0; padding-left: 30px; color: #949494; font-size: 20px; font-weight: 300; line-height: normal; }
+.method-text ul { margin: 10px 0 0; padding-left: 24px; color: #949494; font-size: 16px; font-weight: 300; line-height: normal; }
 .method-text li { padding-left: 0; }
 .method-text-one { top: 1353px; }
 .method-text-three { top: 1511px; }
 .method-text-two { top: 1668px; }
 .method-text-four { top: 1825px; }
 .exploration-label { top: 2092px; }
-.exploration-focus { position: absolute; top: 2135px; left: 120px; width: 1200px; margin: 0; font-size: 24px; font-weight: 300; line-height: 35px; }
-.exploration-copy { position: absolute; left: 120px; width: 540px; font-size: 24px; font-weight: 300; line-height: 35px; }
+.exploration-focus { position: absolute; top: 2135px; left: 120px; width: 1200px; margin: 0; font-size: 20px; font-weight: 300; line-height: 35px; }
+.exploration-copy { position: absolute; left: 120px; width: 540px; font-size: 20px; font-weight: 300; line-height: 35px; }
 .exploration-copy p { margin: 0; }
 .exploration-copy-one { top: 2230px; }
 .exploration-copy-two { top: 2572px; margin: 0; }
@@ -138,33 +138,34 @@ img { display: block; max-width: 100%; -webkit-user-drag: none; user-select: non
 .gallery-i { top: 3136px; left: 748px; width: 178px; height: 180px; }
 .gallery-j { top: 3136px; left: 944px; width: 186px; height: 180px; }
 .gallery-k { top: 3136px; left: 1146px; width: 174px; height: 180px; }
-.solution-label { top: 3488px; }
-.detail-left-render { position: absolute; top: 3488px; left: -30px; width: 634px; height: 1031px; overflow: hidden; mix-blend-mode: multiply; }
+.solution-label { top: 3392px; }
+.detail-left-render { position: absolute; top: 3316px; left: -30px; width: 634px; height: 1031px; overflow: hidden; mix-blend-mode: multiply; }
 .detail-left-render img { position: absolute; top: -252.54%; left: 0; width: 234.29%; height: 576.27%; max-width: none; object-fit: fill; }
-.detail-large-render { position: absolute; top: 4070px; left: 55px; width: 1493px; height: 1148px; max-width: none; object-fit: cover; mix-blend-mode: multiply; }
+.detail-large-render { position: absolute; top: 3893px; left: 55px; width: 1493px; height: 1148px; max-width: none; object-fit: cover; mix-blend-mode: multiply; }
 .detail-guide, .detail-dot, .detail-light-arrow, .detail-light-line { position: absolute; z-index: 2; max-width: none; }
-.guide-main { top: 4266px; left: 473px; width: 104px; height: 233px; }
-.guide-one { top: 3859px; left: 359px; width: 176px; height: 1px; }
-.guide-two { top: 4102px; left: 467px; width: 68px; height: 1px; }
-.guide-three { top: 3965px; left: 207px; width: 328px; height: 1px; }
+.guide-main { top: 4094px; left: 473px; width: 104px; height: 233px; }
+.guide-one { top: 3643px; left: 359px; width: 176px; height: 1px; }
+.guide-two { top: 3930px; left: 467px; width: 68px; height: 1px; }
+.guide-three { top: 3793px; left: 207px; width: 328px; height: 1px; }
 .detail-dot { width: 18px; height: 18px; }
-.dot-one { top: 3850px; left: 350px; }
-.dot-two { top: 4093px; left: 458px; }
-.dot-three { top: 3956px; left: 198px; }
-.dot-four { top: 4256px; left: 464px; }
+.dot-one { top: 3634px; left: 350px; }
+.dot-two { top: 3921px; left: 458px; }
+.dot-three { top: 3784px; left: 198px; }
+.dot-four { top: 4084px; left: 464px; }
 .detail-light-arrow { top: 4135px; left: 1096px; width: 10px; height: 28px; }
 .detail-light-line { top: 4147.5px; left: 1106px; width: 17px; height: 7px; }
-.detail-copy { position: absolute; color: #505050; font-size: 15px; line-height: 25px; }
+.detail-copy { position: absolute; color: #505050; font-size: 16px; font-weight: 300; line-height: normal; }
 .detail-copy h3 { margin: 0 0 10px; color: #000; font-size: 20px; font-weight: 600; line-height: 25px; }
 .detail-copy p { margin: 0; }
-.placement-copy { top: 3846px; left: 574px; width: 713px; }
-.portable-copy { top: 3952px; left: 574px; width: 713px; }
-.light-copy { top: 4089px; left: 574px; width: 713px; }
-.error-copy { top: 4610px; left: 137px; width: 345px; }
-.error-copy p + p { margin-top: 35px; }
+.placement-copy { top: 3630px; left: 577px; width: 743px; }
+.portable-copy { top: 3784px; left: 577px; width: 743px; }
+.light-copy { top: 3926px; left: 577px; width: 743px; }
+.error-copy { top: 4438px; left: 137px; width: 345px; font-size: 15px; line-height: 25px; }
+.error-copy h3 { margin-bottom: 16px; }
+.error-copy p + p { margin-top: 27px; }
 .how-to-label { top: 5384px; }
 .how-to-copy { position: absolute; top: 5427px; left: 120px; width: 1200px; margin: 0; font-size: 24px; font-weight: 300; line-height: 35px; }
-.how-to-image { position: absolute; top: 6439px; left: 0; width: 1440px; height: 865px; max-width: none; object-fit: cover; object-position: center; }
+.how-to-image { position: absolute; top: 6419px; left: 0; width: 1440px; height: 865px; max-width: none; object-fit: cover; object-position: center; }
 
 @media (max-width: 900px) {
   .home-page { padding: 32px 24px 120px; }
