@@ -5,21 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="LuggEasy Scale product design project" />
     <title>LuggEasy Scale · Yoonjin Shin</title>
-    <link rel="preload" as="image" href="./assets/n4030-img1.png" />
+    <link rel="preload" as="image" href="./assets/n4030-hero-figma-exact.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body class="luggage-body">
     <main class="luggage-viewport">
       <div class="luggage-stage" data-node-id="4030:98">
         <div class="lugg-hero-bg"></div>
-        <img class="lugg-hero-product" src="./assets/n4030-img1.png" alt="LuggEasy Scale product" />
+        <div class="lugg-hero-product-frame">
+          <img class="lugg-hero-product" src="./assets/n4030-hero-figma-exact.png" alt="LuggEasy Scale product" />
+        </div>
 
         <header class="lugg-header">
           <a href="./index.html">YOONJIN SHIN</a>
           <nav><a href="./index.html#projects">All Projects</a><a href="#resume">Resume</a></nav>
         </header>
 
-        <h1 class="lugg-title">Lugg<span>Easy</span> Scale</h1>
+        <h1 class="lugg-title"><img src="./assets/n4030-imgLuggEasyScale1.png" alt="LuggEasy Scale" /></h1>
         <img class="lugg-rule" src="./assets/n4030-imgLine13.svg" alt="" />
         <dl class="lugg-meta">
           <div><dt>Period</dt><dd>2021.09 ~ 2022.04</dd></div>
@@ -27,35 +32,29 @@
         </dl>
 
         <h2 class="lugg-label background-label">Background</h2>
-        <p class="background-copy"><strong>Could weighing luggage while packing</strong> be more convenient?<br />When my exchange program in the United States ended, packing for my return to Korea took nearly three hours. I worked up a sweat balancing three suitcases at 28 kg each. The inconvenience of repeatedly adjusting their weight inspired me to design a product that solves this problem.</p>
+        <p class="background-copy">Could weighing luggage while packing be more convenient?<br />Packing to return home after my exchange program in the United States took nearly five hours. I thought I only needed to pack everything and fly back to Korea, but baggage weight limits forced me to discard unnecessary items. Every trip brings the stress of exceeding the baggage allowance, and packing takes considerable time and effort. I wanted to make this process easier and more efficient.</p>
 
-        <h2 class="lugg-label problem-label">Problem</h2>
-        <p class="problem-copy">People use several different methods to keep their luggage within the weight limit, but each method presents its own problems.</p>
-
-        <div class="method-photo method-one"><img src="./assets/n4030-imgWomanStandingScale2.png" alt="A person standing on a scale while holding luggage" /></div>
-        <div class="method-photo method-two"><img src="./assets/n4030-imgAirportG4A3Bcd4Fc19201.png" alt="An airport luggage scale" /></div>
-        <div class="method-photo method-three"><img src="./assets/n4030-imgAirportG4A3Bcd4Fc19201.png" alt="An airport check-in counter" /><img src="./assets/n4030-imgAirportG4A3Bcd4Fc19202.png" alt="" /></div>
-        <div class="method-photo method-four"><img src="./assets/n4030-img201507031914002.png" alt="A portable luggage scale" /></div>
-
-        <div class="method-text method-text-one"><h3>1. Stand on a bathroom scale while holding the suitcase.</h3><p>&gt; Someone else must read the number<br />&gt; It cannot be measured without a scale</p></div>
-        <div class="method-text method-text-three"><h3>3. Weigh it at the check-in counter.</h3><p>&gt; The suitcase must be opened in public<br />&gt; It holds up the people waiting behind</p></div>
-        <div class="method-text method-text-two"><h3>2. Use a luggage scale at the airport.</h3><p>&gt; Not available at every airport<br />&gt; It cannot be used until arrival at the airport</p></div>
-        <div class="method-text method-text-four"><h3>4. Use a portable luggage scale.</h3><p>&gt; Holding the suitcase makes precise measurement difficult<br />&gt; Packing requires repeatedly opening and closing the suitcase<br />&gt; The structure is difficult for children and older adults</p></div>
-
-        <div class="venn-design" aria-label="Portability and efficiency">
-          <img class="venn-a" src="./assets/n4030-imgEllipse236.svg" alt="" />
-          <img class="venn-b" src="./assets/n4030-imgEllipse236.svg" alt="" />
-          <img class="venn-inner-a" src="./assets/n4030-imgEllipse241.svg" alt="" />
-          <img class="venn-inner-b" src="./assets/n4030-imgEllipse241.svg" alt="" />
-          <img class="venn-center-outer" src="./assets/n4030-imgEllipse239.svg" alt="" />
-          <img class="venn-center-inner" src="./assets/n4030-imgEllipse240.svg" alt="" />
-          <img class="venn-center-line" src="./assets/n4030-imgLine187.svg" alt="" />
-          <span class="venn-portable">Portability</span><span class="venn-efficient">Efficiency</span>
-          <p>Compact and easy to store,<br /><strong>with weight visible while packing</strong></p>
+        <h2 class="lugg-label research-label">Research</h2>
+        <div class="research-copy">
+          <p>I conducted in-depth interviews with three frequent travelers who had taken more than ten international trips and three occasional travelers who had taken fewer than ten.</p>
+          <p>Occasional travelers weighed their luggage on a bathroom scale before departure, but relied on the check-in counter or an airport scale for the return trip. Every participant had experienced either paying an excess baggage fee or urgently moving items into carry-on luggage.</p>
+          <p>All frequent travelers carried a portable luggage scale, yet they also described several limitations with the product.</p>
         </div>
 
-        <h2 class="lugg-label solution-label">Solution</h2>
-        <p class="solution-title solution-title-one">Determining the size of an unfolded suitcase</p>
+        <div class="method-photo method-one"><img src="./assets/n4030-imgWomanStandingScale2.png" alt="A person standing on a scale while holding luggage" /></div>
+        <div class="method-photo method-three"><img src="./assets/n4030-imgAirportG4A3Bcd4Fc19201.png" alt="An airport check-in counter" /></div>
+        <div class="method-photo method-two"><img src="./assets/n4030-img201507031914002.png" alt="A portable luggage scale" /></div>
+        <div class="method-photo method-four"><img src="./assets/n4030-imgAirportG4A3Bcd4Fc19201.png" alt="An airport luggage scale" /><img src="./assets/n4030-imgAirportG4A3Bcd4Fc19202.png" alt="" /></div>
+
+        <div class="method-text method-text-one"><h3>1. Stand on a bathroom scale while holding the suitcase.</h3><ul><li>The traveler cannot read the scale while holding the suitcase.</li><li>Measurement is impossible without a bathroom scale.</li></ul></div>
+        <div class="method-text method-text-three"><h3>2. Weigh it at the check-in counter.</h3><ul><li>The suitcase must be opened in a public space.</li><li>Repacking can delay the people waiting behind.</li></ul></div>
+        <div class="method-text method-text-two"><h3>3. Use an airport luggage scale.</h3><ul><li>Not every overseas or regional airport provides one.</li><li>It cannot be used until the traveler reaches the airport.</li></ul></div>
+        <div class="method-text method-text-four"><h3>4. Use a portable luggage scale.</h3><ul><li>Holding the suitcase makes precise measurement difficult.</li><li>Packing requires repeatedly opening and closing the suitcase.</li><li>The structure is difficult for children and older adults.</li></ul></div>
+
+        <h2 class="lugg-label exploration-label">Form Exploration</h2>
+        <p class="exploration-focus">The work focused on two goals: 1. Can travelers check the weight while packing? 2. Is the product easy to carry?</p>
+        <div class="exploration-copy exploration-copy-one"><p>I reviewed the scale module’s size and form so it could weigh an open suitcase reliably.</p><p>I compared economy-class checked-baggage limits across 20 domestic and international airlines. A 28-inch suitcase was the largest commonly accepted size. Based on its unfolded dimensions of 90 × 70 cm, I explored a module form that could support it securely.</p></div>
+        <p class="exploration-copy exploration-copy-two">The concept measures the suitcase’s total weight by adding the readings from multiple modules placed beneath it. Prototype testing showed that three modules could support the suitcase reliably. I also explored a compact form that keeps the three modules together, prevents them from being lost, and takes up minimal luggage space.</p>
 
         <div class="measurement-cards">
           <div class="measure-card"><img src="./assets/n4030-imgStraightenBlack24Dp1.svg" alt="" /><p>Total dimensions<br /><strong>157.1cm</strong></p></div>
@@ -72,7 +71,6 @@
         </div>
         <p class="airline-note">Research across 20 domestic and international airlines</p>
 
-        <p class="solution-title solution-title-two">Determining the size of an unfolded suitcase</p>
         <div class="research-gallery">
           <figure class="gallery-a"><img src="./assets/n4030-imgKakaoTalkPhoto20190521213524401.png" alt="" /></figure>
           <figure class="gallery-b"><img src="./assets/n4030-imgKakaoTalkPhoto20190521213527931.png" alt="" /></figure>
@@ -85,10 +83,9 @@
           <figure class="gallery-i"><img src="./assets/n4030-imgKakaoTalkPhoto20190521215200991.png" alt="" /></figure>
           <figure class="gallery-j"><img src="./assets/n4030-imgKakaoTalkPhoto201911201526441.png" alt="" /></figure>
           <figure class="gallery-k"><img src="./assets/n4030-imgKakaoTalkPhoto201911201621541.png" alt="" /></figure>
-          <figure class="gallery-l"><img src="./assets/n4030-imgL10204701.png" alt="" /></figure>
         </div>
 
-        <div class="solution-step"><img src="./assets/n4030-imgEllipse238.svg" alt="" /><span>2</span><p>Exploring a form that measures weight beneath the suitcase</p></div>
+        <h2 class="lugg-label solution-label">Solution</h2>
 
         <div class="detail-left-render"><img src="./assets/n4030-img2.png" alt="LuggEasy module detail" /></div>
         <img class="detail-large-render" src="./assets/n4030-imgCharger21.png" alt="LuggEasy Scale charging detail" />
@@ -102,13 +99,16 @@
         <img class="detail-dot dot-four" src="./assets/n4030-imgGroup998.svg" alt="" />
         <img class="detail-light-arrow" src="./assets/n4030-imgVector332.svg" alt="" />
         <img class="detail-light-line" src="./assets/n4030-imgLine197.svg" alt="" />
-        <p class="details-caption">Details</p>
-
         <div class="detail-copy placement-copy"><h3>Weigh luggage exactly where it is being packed</h3><p>Three modules are placed beneath the suitcase, using the <u>minimum size required for stability</u> while packing.</p></div>
         <div class="detail-copy portable-copy"><h3>Highly portable individual modules</h3><p><u>When combined, the modules form a triangle</u> for a highly portable design.<br />A central gel pad holds the modules together and can also attach them beneath a suitcase.</p></div>
         <div class="detail-copy light-copy"><h3>Weight feedback through light, without an external device</h3><p>Because the scale sits beneath the suitcase, its display is hidden. When the preset limit is exceeded, <u>a light turns on to provide immediate feedback.</u></p></div>
         <div class="detail-copy error-copy"><h3>A design that prevents errors during use</h3><p>A recessed groove makes the roller easy to turn.</p><p>The charging plug is guided inward so it connects easily.</p></div>
+
+        <h2 class="lugg-label how-to-label">How to Use</h2>
+        <p class="how-to-copy">The work focused on two goals: 1. Can travelers check the weight while packing? 2. Is the product easy to carry?</p>
+        <img class="how-to-image" src="./assets/n4030-imgL10204701.png" alt="A traveler using LuggEasy Scale while packing" />
       </div>
     </main>
+    <script src="./protect-images.js"></script>
   </body>
 </html>
