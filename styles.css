@@ -139,8 +139,8 @@ img { display: block; max-width: 100%; -webkit-user-drag: none; user-select: non
 .gallery-j { top: 3136px; left: 944px; width: 186px; height: 180px; }
 .gallery-k { top: 3136px; left: 1146px; width: 174px; height: 180px; }
 .solution-label { top: 3392px; }
-.detail-left-render { position: absolute; top: 3316px; left: -30px; width: 634px; height: 1031px; overflow: hidden; mix-blend-mode: multiply; }
-.detail-left-render img { position: absolute; top: -252.54%; left: 0; width: 234.29%; height: 576.27%; max-width: none; object-fit: fill; }
+.detail-left-render { position: absolute; top: 3316px; left: -180px; width: 1000px; height: 667px; overflow: visible; mix-blend-mode: multiply; }
+.detail-left-render img { width: 1000px; height: auto; max-width: none; }
 .detail-large-render { position: absolute; top: 3893px; left: 55px; width: 1493px; height: 1148px; max-width: none; object-fit: cover; mix-blend-mode: multiply; }
 .detail-guide, .detail-dot, .detail-light-arrow, .detail-light-line { position: absolute; z-index: 2; max-width: none; }
 .guide-main { top: 4094px; left: 473px; width: 104px; height: 233px; }
