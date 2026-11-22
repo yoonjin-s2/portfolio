@@ -60,7 +60,7 @@ img { display: block; max-width: 100%; -webkit-user-drag: none; user-select: non
 .lugg-hero-bg { position: absolute; top: 0; left: 0; width: 1440px; height: 900px; background: linear-gradient(180deg, #fbfbfb 0 46.519%, #f3f3f3 100%); }
 .lugg-hero-bg::after { position: absolute; inset: 0; background: linear-gradient(180deg, transparent 0%, rgba(217,217,217,.2) 68.75%, rgba(217,217,217,.5) 70.833%, transparent 81.771%); content: ""; }
 .lugg-hero-product-frame { position: absolute; top: 0; left: 0; width: 1440px; height: 894px; overflow: hidden; mix-blend-mode: darken; }
-.lugg-hero-product { position: absolute; top: -103px; right: 0; width: auto; height: 1100px; max-width: none; object-fit: contain; }
+.lugg-hero-product { position: absolute; top: 0; right: 0; width: 1440px; height: auto; max-width: none; }
 .lugg-header { position: absolute; z-index: 5; top: 50px; left: 120px; width: 1200px; font-size: 20px; font-weight: 300; line-height: normal; }
 .lugg-header nav { position: absolute; top: 0; left: 1002px; width: 198px; }
 .lugg-header nav a { position: absolute; top: 0; white-space: nowrap; }
