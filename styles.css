@@ -168,9 +168,9 @@ img { display: block; max-width: 100%; -webkit-user-drag: none; user-select: non
 .dot-two { top: 4894px; left: 458px; }
 .dot-three { top: 4757px; left: 198px; }
 .error-dot { top: 5595px; left: 1085px; }
-.detail-copy { position: absolute; color: #505050; font-size: 16px; font-weight: 300; line-height: normal; }
-.detail-copy h3 { margin: 0 0 8px; color: #000; font-size: 20px; font-weight: 300; line-height: 24px; }
-.detail-copy p { margin: 0; }
+.detail-copy { position: absolute; color: #949494; font-size: 16px; font-weight: 300; line-height: 23px; }
+.detail-copy h3 { margin: 0 0 8px; color: #000; font-size: 20px; font-weight: 300; line-height: normal; }
+.detail-copy p { margin: 0; line-height: 23px; }
 .placement-copy { top: 4603px; left: 577px; width: 743px; }
 .portable-copy { top: 4757px; left: 577px; width: 743px; }
 .light-copy { top: 4899px; left: 574px; width: 746px; }
