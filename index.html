@@ -6,6 +6,10 @@
     <meta name="description" content="UX designer Yoonjin Shin portfolio" />
     <title>Yoonjin Shin · Portfolio</title>
     <script src="./analytics.js" defer></script>
+    <script src="./home.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&amp;display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -17,13 +21,25 @@
       <section class="home-intro" aria-labelledby="intro-title">
         <h1 id="intro-title">Hi 👋<br />My name is <strong>Yoonjin.</strong><br />I’m an <strong>innovative</strong> UX designer<strong>.</strong></h1>
       </section>
+      <div class="project-filters" aria-label="Filter projects">
+        <button class="is-active" type="button" data-filter="all">All<img src="./assets/n4019-line187.svg" alt="" /></button>
+        <button type="button" data-filter="quantitative-analysis">Quantitative Analysis<img src="./assets/n4019-line187.svg" alt="" /></button>
+      </div>
       <section class="project-grid" id="projects" aria-label="All projects">
-        <article class="project-card placeholder-card"><div class="card-visual"></div><h2>(Kakao Map) Theme map</h2><p>Home-cooked Food SNS APP Building</p></article>
-        <article class="project-card placeholder-card"><div class="card-visual"></div><h2>(Kakao Map) Searching UX/UI</h2><p>sub-title</p></article>
-        <a class="project-card linked-card mealing-card" href="./mealing.html" aria-label="View the Mealing project"><div class="card-visual"><img src="./assets/n4019-imgRectangle579.png" alt="MEALING app project visual" /></div><h2>Mealing</h2><p>Home-cooked Food SNS APP Building</p></a>
-        <a class="project-card linked-card luggage-card" href="./luggage.html" aria-label="View the LuggEasy Scale project"><div class="card-visual"><img src="./assets/n4019-img1.png" alt="LuggEasy Scale product visual" /></div><h2>LuggEasy Scale</h2><p>sub-title</p></a>
-        <article class="project-card placeholder-card"><div class="card-visual"></div><h2>MEALING</h2><p>Home-cooked Food SNS APP Building</p></article>
-        <article class="project-card placeholder-card"><div class="card-visual"></div><h2>Title</h2><p>sub-title</p></article>
+        <article class="project-card theme-card" data-category="quantitative-analysis">
+          <div class="card-visual theme-visual" aria-label="Kakao Map theme map screens">
+            <div class="theme-phone theme-phone-one"><img src="./assets/n4019-img2060-1.png" alt="Theme map profile screen" /></div>
+            <div class="theme-phone theme-phone-two"><img src="./assets/n4019-img2060-3b.png" alt="Theme map content screen" /></div>
+            <div class="theme-phone theme-phone-three"><img src="./assets/n4019-img2061-6c.png" alt="Theme map place screen" /></div>
+          </div>
+          <h2>(Kakao Map) Theme map</h2><p>Curation and content service</p>
+          <div class="project-tags"><span>PM</span><span>Quantitative Analysis</span><span>A/B Test</span><span>UT</span></div>
+        </article>
+        <article class="project-card placeholder-card" data-category="ux"><div class="card-visual"></div><h2>(Kakao Map) Search page redesign</h2><p>Dual-view search page redesign</p><div class="project-tags"><span>UX</span><span>UT</span></div></article>
+        <a class="project-card linked-card mealing-card" data-category="startup ux-research" href="./mealing.html" aria-label="View the Mealing project"><div class="card-visual"><img src="./assets/n4019-imgRectangle579.png" alt="MEALING app project visual" /></div><h2>Mealing</h2><p>Home-cooked Food SNS APP Building</p><div class="project-tags"><span>Start-up</span><span>UX Research</span><span>UX Research</span></div></a>
+        <a class="project-card linked-card luggage-card" data-category="product-design prototype ux-research" href="./luggage.html" aria-label="View the LuggEasy Scale project"><div class="card-visual"><img src="./assets/n4019-img1.png" alt="LuggEasy Scale product visual" /></div><h2>LuggEasy Scale</h2><p>Travel luggage scale product design</p><div class="project-tags"><span>Product Design</span><span>Prototype</span><span>UX Research</span></div></a>
+        <article class="project-card placeholder-card" data-category="ux-research"><div class="card-visual"></div><h2>MEALING</h2><p>Home-cooked Food SNS APP Building</p></article>
+        <article class="project-card placeholder-card" data-category="other"><div class="card-visual"></div><h2>Title</h2><p>Sub-title</p></article>
       </section>
     </main>
   </body>
