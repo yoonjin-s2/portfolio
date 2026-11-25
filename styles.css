@@ -38,14 +38,14 @@ img { display: block; max-width: 100%; -webkit-user-drag: none; user-select: non
 .mealing-card .card-visual { background: #a20032; }
 .mealing-card .card-visual img { object-position: 64% 47%; }
 .luggage-card .card-visual { background: linear-gradient(180deg, #fbfbfb 45%, #f3f3f3); }
-.luggage-card .card-visual img { object-fit: contain; object-position: center bottom; transform: scale(1.08); }
+.luggage-card .card-visual img { width: 100%; height: 100%; object-fit: contain; object-position: center bottom; transform: none; }
 .project-card h2, .project-card p { margin: 0; font-size: 20px; line-height: normal; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .project-card h2 { margin-top: 30px; font-weight: 700; }
 .project-card p { margin-top: 8px; font-weight: 300; }
 .project-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 19px; }
 .project-tags span { padding: 6px 10px 5px; border-radius: 100px; background: #f4f4f4; font-family: "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, sans-serif; font-size: 16px; font-weight: 400; line-height: normal; white-space: nowrap; }
 .linked-card:hover .card-visual img { transform: scale(1.035); }
-.luggage-card:hover .card-visual img { transform: scale(1.115); }
+.luggage-card:hover .card-visual img { transform: none; }
 .package-card .card-visual { background: #f8f7f2; }
 .package-card .card-visual img { object-fit: contain; }
 .linked-card:focus-visible { outline: 4px solid #000; outline-offset: 8px; }
