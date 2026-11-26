@@ -132,15 +132,21 @@ img { display: block; max-width: 100%; -webkit-user-drag: none; user-select: non
 .exploration-copy p { margin: 0; }
 .exploration-copy-one { top: 2230px; }
 .exploration-copy-two { top: 2572px; margin: 0; }
-.measurement-cards { position: absolute; top: 2252px; left: 748px; width: 160px; }
-.measure-card { display: flex; width: 160px; height: 74px; align-items: center; margin-bottom: 11px; border-radius: 10px; background: #fafbff; }
-.measure-card > img, .measure-card > span { position: relative; width: 35px; height: 35px; margin-left: 25px; }
+.measurement-cards { position: absolute; top: 2240px; left: 748px; width: 160px; }
+.measure-card { position: relative; width: 160px; height: 74px; margin-bottom: 11px; border-radius: 10px; background: #fafbff; }
+.measure-card > img, .measure-card > span { position: absolute; top: 19px; left: 25px; width: 35px; height: 35px; }
 .measure-card > span img { position: absolute; inset: 0; width: 35px; height: 35px; }
 .measure-card > span img + img { inset: 3px; width: 29px; height: 29px; }
-.measure-card p { width: 76px; margin: 0; color: #505050; font-size: 15px; line-height: 23px; text-align: center; }
+.measure-card p { position: absolute; top: 14px; left: 60px; width: 90px; margin: 0; color: #505050; font-size: 15px; font-weight: 400; line-height: 23px; text-align: center; }
+.measure-card strong { display: block; font-weight: 700; }
+.dimension-measure { height: 86px; }
+.dimension-measure > img { top: 26px; }
+.dimension-measure p { top: 17px; width: 91px; line-height: 14px; }
+.dimension-measure strong { margin-top: 5px; line-height: 23px; }
 .suitcase-standard { position: absolute; top: 2249px; left: 939px; width: 109px; height: 165px; overflow: hidden; }
 .suitcase-standard img { width: 100%; height: 100%; object-fit: cover; opacity: .7; }
-.suitcase-standard p { position: absolute; top: 46px; left: 0; width: 100%; margin: 0; color: #fff; font-size: 12px; line-height: 20px; text-align: center; }
+.suitcase-standard p { position: absolute; top: 37px; left: 0; width: 100%; margin: 0; color: #fff; font-size: 12px; font-weight: 500; line-height: 20px; text-align: center; }
+.suitcase-standard strong { font-weight: 700; }
 .dimension-diagram { position: absolute; top: 2252px; left: 1093px; width: 227px; height: 162px; }
 .dimension-union { position: absolute; top: 54px; width: 46px; height: 53px; }
 .dimension-union.one { left: -203px; }
@@ -153,8 +159,8 @@ img { display: block; max-width: 100%; -webkit-user-drag: none; user-select: non
 .dimension-arrow.vertical { top: 23px; left: 181px; width: 6px; height: 122px; }
 .dim-width { position: absolute; top: -12px; left: 70px; font-size: 15px; }
 .dim-height { position: absolute; top: 66px; left: 187px; font-size: 15px; }
-.dimension-diagram small { position: absolute; top: 159px; left: 54px; width: 130px; color: #505050; font-size: 12px; text-align: center; }
-.airline-note { position: absolute; top: 2418px; left: 777px; margin: 0; color: #8f8f8f; font-size: 10px; line-height: 23px; }
+.dimension-diagram small { position: absolute; top: 166px; left: 22px; width: 130px; color: #8f8f8f; font-size: 10px; font-weight: 400; line-height: 13px; text-align: center; }
+.airline-note { position: absolute; top: 2418px; left: 777px; width: 108px; margin: 0; color: #8f8f8f; font-size: 10px; font-weight: 400; line-height: 13px; text-align: center; }
 .research-gallery figure { position: absolute; margin: 0; overflow: hidden; border-radius: 5px; }
 .research-gallery img { width: 100%; height: 100%; max-width: none; object-fit: cover; }
 .gallery-a { top: 2572px; left: 748px; width: 157px; height: 189px; }
