@@ -74,6 +74,24 @@ img { display: block; max-width: 100%; -webkit-user-drag: none; user-select: non
 .mealing-cover { position: relative; height: 900px; overflow: hidden; color: #fff; background: #a20032; }
 .mealing-cover-image { position: absolute; top: 0; right: 0; width: min(53.75vw, 774px); height: 900px; overflow: hidden; }
 .mealing-cover-image img { width: 100%; height: 100%; object-fit: cover; object-position: 69% 50%; }
+.translation-preview { cursor: help; outline: none; }
+.screen-translation-layer { position: absolute; z-index: 2; inset: 0; background: rgba(15,15,15,.1); opacity: 0; pointer-events: none; transition: opacity .2s ease; }
+.translation-preview.is-translating .screen-translation-layer, .translation-preview:focus-visible .screen-translation-layer { opacity: 1; }
+.screen-translation-label { position: absolute; max-width: 250px; padding: 6px 9px; border: 1px solid rgba(255,255,255,.5); border-radius: 6px; background: rgba(18,18,18,.88); box-shadow: 0 5px 16px rgba(0,0,0,.2); color: #fff; font: 500 10px/1.35 "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; white-space: nowrap; }
+.screen-translation-label::before { position: absolute; top: 50%; width: 22px; height: 1px; background: rgba(255,255,255,.9); content: ""; }
+.screen-translation-label::after { position: absolute; top: calc(50% - 2px); width: 5px; height: 5px; border-radius: 50%; background: #fff; content: ""; }
+.screen-translation-label.points-left::before { right: 100%; }
+.screen-translation-label.points-left::after { right: calc(100% + 20px); }
+.screen-translation-label.points-right::before { left: 100%; }
+.screen-translation-label.points-right::after { left: calc(100% + 20px); }
+.label-how { top: 12%; left: 54%; }
+.label-steps { top: 19%; left: 61%; }
+.label-filters { top: 28%; left: 4%; }
+.label-suggestion { top: 48%; right: 2%; }
+.label-tabs { bottom: 19%; left: 13%; }
+.label-navigation { bottom: 6%; left: 7%; }
+.cursor-translation-hint { position: fixed; z-index: 1000; top: 0; left: 0; padding: 8px 11px; border-radius: 999px; background: #111; box-shadow: 0 5px 18px rgba(0,0,0,.18); color: #fff; font: 500 12px/1 "Inter", sans-serif; opacity: 0; pointer-events: none; transition: opacity .12s ease; white-space: nowrap; }
+.cursor-translation-hint.is-visible { opacity: 1; }
 .mealing-cover .case-header nav { color: #000; }
 .mealing-heading { position: absolute; top: 146px; left: max(32px, calc(50% - 600px)); z-index: 2; }
 .mealing-heading h1 { margin: 0 0 24px; font-size: 30px; font-weight: 700; line-height: 62px; }
@@ -203,6 +221,8 @@ img { display: block; max-width: 100%; -webkit-user-drag: none; user-select: non
 .mockup-image { position: absolute; top: 6307px; left: 120px; width: 1200px; height: 720px; max-width: none; object-fit: cover; object-position: center; }
 
 @media (max-width: 900px) {
+  .cursor-translation-hint { display: none; }
+  .screen-translation-label { max-width: 190px; padding: 5px 7px; font-size: 8px; }
   .home-page { padding: 32px 24px 120px; }
   .site-header { font-size: 15px; }
   .site-header nav { gap: 22px; }
