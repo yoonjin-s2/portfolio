@@ -7,6 +7,7 @@
     <title>MEALING · Yoonjin Shin</title>
     <script src="./analytics.js" defer></script>
     <script src="./image-translations.js" defer></script>
+    <script src="./key-features.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet" />
@@ -175,9 +176,50 @@
           <img class="figma-wireframes" src="./assets/n4028-wireframes-figma@2x.png" alt="MEALING user and admin wireframes from Figma" />
         </section>
 
-        <section class="meal-features">
-          <h2>Key Features</h2>
-          <p>Created wireframes for both user-facing and admin screens in Figma.</p>
+        <section class="meal-features" aria-labelledby="key-features-title">
+          <h2 id="key-features-title">Key Features</h2>
+          <p class="feature-intro">Explore product and recipe information directly from a photo.</p>
+
+          <div class="feature-player" data-feature-player>
+            <div class="feature-copy">
+              <div class="feature-tabs" role="tablist" aria-label="Key feature scenes">
+                <button id="feature-tab-1" class="feature-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="feature-panel-1" data-feature-tab="0"><span>01</span><i aria-hidden="true"></i></button>
+                <button id="feature-tab-2" class="feature-tab" type="button" role="tab" aria-selected="false" aria-controls="feature-panel-2" data-feature-tab="1" tabindex="-1"><span>02</span><i aria-hidden="true"></i></button>
+                <button id="feature-tab-3" class="feature-tab" type="button" role="tab" aria-selected="false" aria-controls="feature-panel-3" data-feature-tab="2" tabindex="-1"><span>03</span><i aria-hidden="true"></i></button>
+              </div>
+
+              <div class="feature-panels">
+                <article id="feature-panel-1" class="feature-panel is-active" role="tabpanel" aria-labelledby="feature-tab-1" data-feature-panel="0">
+                  <p class="feature-kicker">Recipe information</p>
+                  <h3>Find the dish in the photo</h3>
+                  <p>Tap a marker placed directly on the image to identify the featured dish and open its recipe without interrupting the browsing experience.</p>
+                </article>
+                <article id="feature-panel-2" class="feature-panel" role="tabpanel" aria-labelledby="feature-tab-2" data-feature-panel="1" hidden>
+                  <p class="feature-kicker">Product information</p>
+                  <h3>Identify products at a glance</h3>
+                  <p>Product names appear beside the exact object in the photo, making it easy to find tableware and continue to its purchase page.</p>
+                </article>
+                <article id="feature-panel-3" class="feature-panel" role="tabpanel" aria-labelledby="feature-tab-3" data-feature-panel="2" hidden>
+                  <p class="feature-kicker">Seamless exploration</p>
+                  <h3>Explore every tagged item</h3>
+                  <p>Multiple markers organize recipe and product links within a single image, so people can move between inspiration and useful information naturally.</p>
+                </article>
+              </div>
+
+              <div class="feature-playback" aria-hidden="true"><span class="feature-playback-label">AUTO PLAY</span><span class="feature-playback-track"><i></i></span></div>
+            </div>
+
+            <div class="feature-visual" aria-live="polite">
+              <div class="feature-phone">
+                <img class="feature-phone-ui" src="./assets/n4028-keyfeature-phone@4x.png" width="393" height="1063" alt="MEALING mobile application detail screen" />
+                <div class="feature-photo-window">
+                  <figure class="feature-scene is-active" data-feature-scene="0"><img src="./assets/n4028-keyfeature-01@4x.png" width="361" height="361" alt="Banana toast information displayed over a food photo" /></figure>
+                  <figure class="feature-scene" data-feature-scene="1" aria-hidden="true"><img src="./assets/n4028-keyfeature-02@4x.png" width="361" height="361" alt="Villeroy &amp; Boch plate information displayed over a food photo" /></figure>
+                  <figure class="feature-scene" data-feature-scene="2" aria-hidden="true"><img src="./assets/n4028-keyfeature-03@4x.png" width="361" height="361" alt="All recipe and product markers displayed over a food photo" /></figure>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </main>

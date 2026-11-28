@@ -465,6 +465,40 @@ img { display: block; max-width: 100%; -webkit-user-drag: none; user-select: non
 .wireframe header { height: 26px; border-bottom: 1px solid #d0d0d0; background: #f4f4f4; }
 .wireframe i, .wireframe b, .wireframe span { display: block; margin: 14px; border-radius: 2px; background: #ececec; }
 .wireframe i { height: 9px; box-shadow: 0 18px 0 #f2f2f2; }.wireframe b { height: 88px; background: #ddd; }.wireframe span { float: left; width: 23px; height: calc(100% - 48px); margin-right: 5px; }
-.meal-features { top: 6846px; height: 289px; }
+.meal-features { top: 6846px; height: 1260px; background: #fff; }
 .meal-features > h2 { top: 0; left: 110px; }
-.meal-features > p { position: absolute; top: 43px; left: 110px; margin: 0; font-size: 20px; font-weight: 300; line-height: 30px; }
+.meal-features > .feature-intro { position: absolute; top: 43px; left: 110px; margin: 0; color: #202020; font-size: 20px; font-weight: 300; line-height: 30px; }
+.feature-player { position: absolute; top: 144px; left: 110px; display: grid; grid-template-columns: 455px 1fr; column-gap: 126px; width: 1220px; height: 1070px; }
+.feature-copy { position: relative; padding-top: 18px; }
+.feature-tabs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; width: 455px; border-bottom: 1px solid #dedede; }
+.feature-tab { position: relative; height: 60px; padding: 0; border: 0; background: transparent; color: #b3b3b3; cursor: pointer; font: inherit; text-align: left; }
+.feature-tab span { display: block; font-size: 18px; font-weight: 500; line-height: 30px; transition: color .25s ease; }
+.feature-tab i { position: absolute; right: 0; bottom: -1px; left: 0; height: 2px; overflow: hidden; background: transparent; }
+.feature-tab i::after { position: absolute; inset: 0; background: #a20032; content: ""; transform: scaleX(0); transform-origin: left; }
+.feature-tab:hover span, .feature-tab:focus-visible span, .feature-tab.is-active span { color: #a20032; }
+.feature-tab:focus-visible { outline: 2px solid #a20032; outline-offset: 4px; }
+.feature-tab.is-active i::after { transform: scaleX(1); }
+.feature-panels { position: relative; height: 282px; margin-top: 54px; }
+.feature-panel { position: absolute; inset: 0; opacity: 0; transform: translateY(12px); transition: opacity .35s ease, transform .35s ease; }
+.feature-panel.is-active { opacity: 1; transform: translateY(0); }
+.feature-panel[hidden] { display: block; visibility: hidden; }
+.feature-panel .feature-kicker { margin: 0 0 12px; color: #a20032; font-size: 14px; font-weight: 500; line-height: 25px; }
+.feature-panel h3 { width: 420px; margin: 0 0 23px; color: #202020; font-size: 32px; font-weight: 500; line-height: 42px; }
+.feature-panel > p:last-child { width: 430px; margin: 0; color: #606060; font-size: 17px; font-weight: 300; line-height: 30px; }
+.feature-playback { position: absolute; top: 476px; left: 0; display: flex; align-items: center; gap: 18px; color: #9b9b9b; }
+.feature-playback-label { font-size: 10px; font-weight: 500; letter-spacing: .12em; }
+.feature-playback-track { position: relative; display: block; width: 146px; height: 1px; overflow: hidden; background: #dedede; }
+.feature-playback-track i { position: absolute; inset: 0; background: #a20032; transform: scaleX(0); transform-origin: left; }
+.feature-player.is-playing .feature-playback-track i { animation: feature-progress 4.8s linear forwards; }
+.feature-visual { position: relative; display: flex; justify-content: center; width: 560px; height: 1070px; overflow: visible; }
+.feature-phone { position: relative; width: 393px; height: 1063px; }
+.feature-phone-ui { position: absolute; inset: 0; display: block; width: 393px; height: 1063px; max-width: none; object-fit: none; image-rendering: auto; }
+.feature-photo-window { position: absolute; z-index: 2; top: 10.724%; left: 3.817%; width: 91.858%; aspect-ratio: 1; overflow: hidden; background: #f4f1ed; }
+.feature-scene { position: absolute; inset: 0; margin: 0; opacity: 0; transition: opacity .45s ease; }
+.feature-scene.is-active { z-index: 1; opacity: 1; }
+.feature-scene img { display: block; width: 100%; height: 100%; object-fit: cover; image-rendering: auto; }
+@keyframes feature-progress { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@media (prefers-reduced-motion: reduce) {
+  .feature-panel, .feature-scene, .feature-tab span { transition: none; }
+  .feature-player.is-playing .feature-playback-track i { animation: none; }
+}
