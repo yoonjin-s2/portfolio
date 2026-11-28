@@ -3,22 +3,225 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="MEALING home-cooked food social commerce app" />
+    <meta name="description" content="MEALING home-cooking community commerce app" />
     <title>MEALING · Yoonjin Shin</title>
     <script src="./analytics.js" defer></script>
+    <script src="./image-translations.js" defer></script>
+    <script src="./key-features.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet" />
     <link rel="preload" as="image" href="./assets/n4028-imgGroup571.png" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body>
-    <main class="case-page mealing-case">
-      <section class="mealing-cover" aria-labelledby="mealing-title">
-        <div class="mealing-cover-image"><img src="./assets/n4028-imgGroup571.png" alt="A collection of MEALING application screens" /></div>
-        <header class="site-header case-header"><a class="site-logo" href="./index.html">YOONJIN SHIN</a><nav><a href="./index.html#projects">All Projects</a><a href="#resume">Resume</a></nav></header>
-        <div class="mealing-heading"><h1 id="mealing-title">Building a Home-Cooking Community Commerce App</h1><img src="./assets/n4028-img1.svg" alt="MEALING" /></div>
-        <dl class="case-meta light-meta"><div><dt>Period</dt><dd>2021.09 ~ 2022.04</dd></div><div><dt>Contribution</dt><dd>Service Design 40%, UX Design 100%, UI Design 80%, Operation 100%</dd></div></dl>
-      </section>
-      <section class="case-copy mealing-overview"><h2>Overview</h2><p>As the COVID-19 pandemic continued, home cooking and meal kits became two of the fastest-growing markets. Unable to go out, people cooked at home and shared their meals with others.<br />A home-cooked meal was no longer just a convenient way to eat. It became a way for people to enjoy a beautiful, delicious meal, feel that they were living well, and express themselves.<br />Although demand for home-cooked food was growing, no service focused on it as its primary market.<br />We set out to build a social commerce platform that begins with a community for home-cooking content and lets users purchase featured products directly from that content.</p></section>
-      <section class="case-copy mealing-research"><h2>Research</h2><p>As the COVID-19 pandemic continued, home cooking and meal kits became two of the fastest-growing markets. Unable to go out, people cooked at home and shared their meals with others.</p></section>
+  <body class="mealing-body">
+    <main class="mealing-viewport">
+      <div class="mealing-stage">
+        <section class="meal-hero" aria-labelledby="mealing-title">
+          <div class="meal-hero-art translation-preview" data-translation-preview data-cursor-hint="Hover to view in English" tabindex="0" aria-label="MEALING application screens. Hover to view English translations.">
+            <img src="./assets/n4028-imgGroup571.png" alt="MEALING application screens" />
+            <div class="screen-translation-layer" aria-hidden="true">
+              <span class="screen-translation-label points-left label-how">How did you make this?</span>
+              <span class="screen-translation-label points-left label-steps">Taco · Pad Thai · Baked Sandwich</span>
+              <span class="screen-translation-label points-right label-filters">Home Cooking · Brunch · One Plate · Newlywed Meals</span>
+              <span class="screen-translation-label points-left label-suggestion">What should we eat today?</span>
+              <span class="screen-translation-label points-right label-tabs">Table · Recipes · Search</span>
+              <span class="screen-translation-label points-right label-navigation">Home · Search · Create · Feed · My</span>
+            </div>
+          </div>
+          <header class="site-header meal-header"><a class="site-logo" href="./index.html">YOONJIN SHIN</a><nav><a href="./index.html#projects">All Projects</a><a href="#resume">Resume</a></nav></header>
+          <img class="meal-logo" src="./assets/n4028-img1.svg" alt="MEALING" />
+          <h1 id="mealing-title">Building a Home-Cooking Community Commerce App</h1>
+          <div class="meal-rule" aria-hidden="true"></div>
+          <dl class="meal-meta"><div><dt>Period</dt><dd>Dec 2020 ~ April 2022</dd></div><div><dt>Contribution</dt><dd>Service Design 40%, UX Design 100%, UI Design 80%, Operation 100%</dd></div></dl>
+        </section>
+
+        <section class="meal-overview">
+          <h2>Overview</h2>
+          <p>As the COVID-19 pandemic continued, home cooking and meal kits became two of the fastest-growing markets. Unable to go out, people cooked at home and shared their meals with others.<br />A home-cooked meal was no longer simply a convenient way to eat. It became a way to enjoy a beautiful, delicious meal, feel that life was going well, and express oneself.<br />Although demand for home-cooked food continued to grow, no service treated it as its primary market.<br />We set out to build a social commerce platform that begins with a community for home-cooking content and enables users to purchase featured products directly from that content.</p>
+          <section class="overview-diagram" aria-label="MEALING service-design process">
+            <h3><span>Designing home-cooked meal community app centered on </span><span class="overview-title-audiences"><strong>content consumers </strong><em>and</em><strong>       content creators</strong></span></h3>
+            <img class="overview-main-icon" src="./assets/n4028-overview-main-icon.svg" alt="" />
+            <img class="overview-creator-title-icon" src="./assets/n4028-overview-title-creator-icon.svg" alt="" />
+
+            <img class="overview-triangle overview-triangle-service" src="./assets/n4028-overview-ux.svg" alt="" />
+            <img class="overview-triangle overview-triangle-operation" src="./assets/n4028-overview-operation.svg" alt="" />
+            <div class="overview-plane-wrap overview-plane-service"><span></span></div>
+            <div class="overview-plane-wrap overview-plane-operation"><span></span></div>
+            <img class="overview-flow overview-flow-consumers" src="./assets/n4028-overview-service.svg" alt="" />
+            <img class="overview-flow overview-flow-creators" src="./assets/n4028-overview-creators.svg" alt="" />
+
+            <img class="overview-label-icon overview-consumers-icon" src="./assets/n4028-overview-consumer-icon.svg" alt="" />
+            <div class="overview-flow-label overview-consumers-label">Content Consumers</div>
+            <img class="overview-label-icon overview-creators-icon" src="./assets/n4028-overview-creator-icon.svg" alt="" />
+            <div class="overview-flow-label overview-creators-label">Content Creators</div>
+
+            <ul class="overview-methods overview-service-methods">
+              <li>Survey</li><li>Indepth-Interview</li><li>Benchmarking</li><li>Competitive Analysis</li>
+            </ul>
+            <ul class="overview-methods overview-analysis-methods">
+              <li>Persona</li><li>Affinity Diagram</li><li>Journey Map</li>
+            </ul>
+            <ul class="overview-methods overview-design-methods">
+              <li>Idea Workshop</li><li>IA</li><li>Wire Frame</li>
+            </ul>
+            <ul class="overview-methods overview-operation-methods">
+              <li>Prototype</li><li>UT</li><li>A/B Test</li><li>QA</li>
+            </ul>
+
+            <article class="overview-phase overview-phase-service"><h4>Service Design</h4><p>Focus on the pain points, needs and insights of the content consumers and creators.</p></article>
+            <article class="overview-phase overview-phase-ux"><h4>UX/UI Design</h4><p>Focus on how to fit the needs of content consumers and creators.</p></article>
+            <article class="overview-phase overview-phase-operation"><h4>Operation</h4><p>Conducting tests for improving the usability.</p></article>
+          </section>
+        </section>
+
+        <section class="meal-research">
+          <h2>Research</h2>
+          <div class="meal-research-copy consumer-copy">
+            <p>We conducted separate user research for content creators and consumers. To understand consumer behavior and needs, we held in-depth interviews with 14 people who followed more than 30 home-cooking accounts.</p>
+            <p>We structured the interviews in an <strong>Affinity Diagram</strong> to identify shared patterns and needs. This revealed insights into content exposure and structure, communication culture, and search behavior, allowing us to distinguish <strong>exploration-driven</strong> and <strong>goal-driven</strong> consumers.</p>
+            <p>Goal-driven consumers experienced more friction while finding and using information. Because their goals closely aligned with the business objective, we analyzed their experience in greater depth.</p>
+            <p>Journey maps for “finding a menu” and “discovering a new product” showed that, even after discovering interesting content, users still struggled to locate the exact product or recipe information they wanted.</p>
+          </div>
+
+          <img class="figma-research-art" src="./assets/n4028-research-figma@2x.png" alt="MEALING consumer and creator research diagrams from Figma" />
+          <img class="figma-research-layer research-consumer-portrait" src="./assets/n4028-research-consumer-portrait@2x.png" alt="Consumer interview participant" />
+          <img class="figma-research-layer research-consumer-diagram" src="./assets/n4028-research-consumer-diagram@2x.png" alt="Consumer affinity diagram" />
+          <img class="figma-research-layer research-journey-a" src="./assets/n4028-research-journey-a@2x.png" alt="Menu discovery journey map" />
+          <img class="figma-research-layer research-journey-b" src="./assets/n4028-research-journey-b@2x.png" alt="Product discovery journey map" />
+          <img class="figma-research-layer research-creator-a" src="./assets/n4028-research-creator-a@2x.png" alt="Creator interview participant" />
+          <img class="figma-research-layer research-creator-b" src="./assets/n4028-research-creator-b@2x.png" alt="Creator interview participant" />
+          <img class="figma-research-layer research-creator-strip" src="./assets/n4028-research-creator-strip@2x.png" alt="Creator affinity diagram" />
+          <img class="figma-research-layer research-benchmark-logo-a" src="./assets/n4028-research-benchmark-logo-a@2x.png" alt="" />
+          <img class="figma-research-layer research-benchmark-logo-b" src="./assets/n4028-research-benchmark-logo-b@2x.png" alt="" />
+          <img class="figma-research-layer research-benchmark-logo-c" src="./assets/n4028-research-benchmark-logo-c@2x.png" alt="" />
+          <img class="figma-research-layer research-benchmark-instagram" src="./assets/n4028-research-benchmark-instagram@2x.png" alt="Instagram" />
+
+          <article class="research-card research-consumer-card" aria-label="Consumer interview insight">
+            <img src="./assets/n4028-research-consumer-portrait@2x.png" alt="Consumer interview participant" />
+            <blockquote>“I want something new beyond the same menus and ingredients.”</blockquote>
+            <dl class="research-persona">
+              <div><dt>Name</dt><dd>Sujin Kim</dd></div>
+              <div><dt>Age</dt><dd>35</dd></div>
+              <div><dt>Location</dt><dd>Seoul, Korea</dd></div>
+              <div><dt>Family</dt><dd>Married<br />1 Child</dd></div>
+            </dl>
+            <div class="research-card-column pain-column"><h3>Pain Points</h3><p>Deciding what to eat every day is difficult.<br />Searching for food information is tedious.<br />The true lowest price is hard to identify.<br />Leftover ingredients need to be used quickly.</p></div>
+            <div class="research-card-column goals-column"><h3>Goals</h3><p>Discover trending ingredients.<br />Open recipes for unfamiliar dishes immediately.<br />Buy ingredients at the lowest price.<br />Find recipes using ingredients already at home.</p></div>
+          </article>
+
+          <article class="research-card creator-insight-card creator-insight-a" aria-label="Record-keeper creator insight">
+            <img src="./assets/n4028-research-creator-a@2x.png" alt="Creator interview participant" />
+            <blockquote>“This table brings back<br />the moment.”</blockquote>
+            <h3>Goals</h3>
+            <p>Connect comfortably with people who share an interest in home cooking.<br />See cutlery details easily and buy at the lowest price.</p>
+          </article>
+
+          <article class="research-card creator-insight-card creator-insight-b" aria-label="Information-provider creator insight">
+            <img src="./assets/n4028-research-creator-b@2x.png" alt="Creator interview participant" />
+            <blockquote>“Reactions to my table<br />make me proud.”</blockquote>
+            <h3>Goals</h3>
+            <p>Use a structure that makes information easy to share.<br />Write quickly and conveniently with structured templates.</p>
+          </article>
+
+          <section class="research-benchmark" aria-label="Publishing-page benchmarking">
+            <h3>Benchmarking</h3>
+            <p class="benchmark-intro">Analyzed publishing pages from existing channels<br />using heuristic evaluation criteria.</p>
+            <div class="benchmark-channels" aria-hidden="true">
+              <span><img src="./assets/n4028-research-benchmark-instagram@2x.png" alt="" /></span>
+              <span><img src="./assets/n4028-research-benchmark-logo-b@2x.png" alt="" /></span>
+              <span><img src="./assets/n4028-research-benchmark-logo-a@2x.png" alt="" /></span>
+              <span><img src="./assets/n4028-research-benchmark-logo-c@2x.png" alt="" /></span>
+            </div>
+            <div class="benchmark-evaluation">
+              <svg class="benchmark-thumb up" viewBox="0 0 24 24" aria-hidden="true"><path d="M1 21h4V9H1v12Zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2Z" /></svg>
+              <p class="benchmark-positive"><span>(Intuitive)</span> Simple, photo-led publishing<br /><span>(Useful)</span> Easy photo editing and a clear flow</p>
+              <svg class="benchmark-thumb down" viewBox="0 0 24 24" aria-hidden="true"><path d="M1 21h4V9H1v12Zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2Z" /></svg>
+              <p class="benchmark-negative"><span>(User control)</span> Photos cannot be edited after publishing<br /><span>(Intuitive)</span> Published posts differ from the writing view<br /><span>(Aesthetic)</span> Tight line spacing reduces readability</p>
+            </div>
+          </section>
+
+          <div class="meal-research-copy creator-copy">
+            <p>To understand creators’ motivations and needs throughout the publishing process, we conducted in-depth interviews with six home-cooking content creators.</p>
+            <p>We organized the interviews in an <strong>Affinity Diagram</strong> and identified two primary creator types: <strong>record keepers</strong> and <strong>information providers</strong>. Record keepers valued documenting their tables and connecting with people who shared their interests, while information providers published useful content or created posts for commercial purposes. Both groups needed structured templates and easier ways to share information.</p>
+            <p>We also reviewed existing publishing tools using heuristic evaluation criteria. Photo-led publishing and editing flows worked well, but creators could not revise images after publishing, and the final post often differed from the writing screen.</p>
+            <p>These findings shaped a purpose-driven writing experience that supports quick photo records, structured information sharing, and continued motivation through reactions and conversation.</p>
+          </div>
+        </section>
+
+        <section class="meal-strategy">
+          <h2>UX Strategy</h2>
+          <div class="strategy-pillars" aria-label="UX strategy principles">
+            <div><span>EASY</span></div>
+            <div><span>SEAMLESS</span></div>
+            <div><span>ACTING</span></div>
+          </div>
+          <div class="strategy-audience strategy-consumer"><img src="./assets/n4028-strategy-consumer.svg" alt="" /><span>Content<br />Consumer</span></div>
+          <div class="strategy-audience strategy-creator"><img src="./assets/n4028-strategy-creator.svg" alt="" /><span>Content<br />Creator</span></div>
+          <div class="strategy-grid">
+            <article><h3>UX Writing</h3><ul><li>Easy-to-understand labels</li><li>Friendly copy</li></ul></article>
+            <article><h3>Contents</h3><ul><li>View all information in a post</li><li>Buy at the lowest price</li></ul></article>
+            <article><h3>Communication</h3><ul><li>Encourage following</li><li>Promote likes and saves</li><li>Build rapport</li></ul></article>
+            <article><h3>IA</h3><ul><li>Clear categories</li><li>Easy sign-up</li></ul></article>
+            <article><h3>Search</h3><ul><li>Combined search</li></ul></article>
+            <article><h3>Usability</h3><ul><li>Easy-to-understand labels</li><li>Friendly copy</li></ul></article>
+            <article><h3>Writing Page</h3><ul><li>View all information in a post</li><li>Buy at the lowest price</li></ul></article>
+            <article><h3>Motivation</h3><ul><li>Make creating content easier</li><li>Support home-cooking conversations</li></ul></article>
+          </div>
+        </section>
+
+        <section class="meal-wireframe">
+          <h2>Wireframe</h2>
+          <p>Created wireframes for both user-facing and admin screens in Figma.</p>
+          <img class="figma-wireframes" src="./assets/n4028-wireframes-figma@2x.png" alt="MEALING user and admin wireframes from Figma" />
+        </section>
+
+        <section class="meal-features" aria-labelledby="key-features-title">
+          <h2 id="key-features-title">Key Features</h2>
+          <p class="feature-intro">Explore product and recipe information directly from a photo.</p>
+
+          <div class="feature-player" data-feature-player>
+            <div class="feature-copy">
+              <div class="feature-tabs" role="tablist" aria-label="Key feature scenes">
+                <button id="feature-tab-1" class="feature-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="feature-panel-1" data-feature-tab="0"><span>01</span><i aria-hidden="true"></i></button>
+                <button id="feature-tab-2" class="feature-tab" type="button" role="tab" aria-selected="false" aria-controls="feature-panel-2" data-feature-tab="1" tabindex="-1"><span>02</span><i aria-hidden="true"></i></button>
+                <button id="feature-tab-3" class="feature-tab" type="button" role="tab" aria-selected="false" aria-controls="feature-panel-3" data-feature-tab="2" tabindex="-1"><span>03</span><i aria-hidden="true"></i></button>
+              </div>
+
+              <div class="feature-panels">
+                <article id="feature-panel-1" class="feature-panel is-active" role="tabpanel" aria-labelledby="feature-tab-1" data-feature-panel="0">
+                  <p class="feature-kicker">Recipe information</p>
+                  <h3>Find the dish in the photo</h3>
+                  <p>Tap a marker placed directly on the image to identify the featured dish and open its recipe without interrupting the browsing experience.</p>
+                </article>
+                <article id="feature-panel-2" class="feature-panel" role="tabpanel" aria-labelledby="feature-tab-2" data-feature-panel="1" hidden>
+                  <p class="feature-kicker">Product information</p>
+                  <h3>Identify products at a glance</h3>
+                  <p>Product names appear beside the exact object in the photo, making it easy to find tableware and continue to its purchase page.</p>
+                </article>
+                <article id="feature-panel-3" class="feature-panel" role="tabpanel" aria-labelledby="feature-tab-3" data-feature-panel="2" hidden>
+                  <p class="feature-kicker">Seamless exploration</p>
+                  <h3>Explore every tagged item</h3>
+                  <p>Multiple markers organize recipe and product links within a single image, so people can move between inspiration and useful information naturally.</p>
+                </article>
+              </div>
+
+              <div class="feature-playback" aria-hidden="true"><span class="feature-playback-label">AUTO PLAY</span><span class="feature-playback-track"><i></i></span></div>
+            </div>
+
+            <div class="feature-visual" aria-live="polite">
+              <div class="feature-phone">
+                <img class="feature-phone-ui" src="./assets/n4028-keyfeature-phone@4x.png" width="393" height="1063" alt="MEALING mobile application detail screen" />
+                <div class="feature-photo-window">
+                  <figure class="feature-scene is-active" data-feature-scene="0"><img src="./assets/n4028-keyfeature-01@4x.png" width="361" height="361" alt="Banana toast information displayed over a food photo" /></figure>
+                  <figure class="feature-scene" data-feature-scene="1" aria-hidden="true"><img src="./assets/n4028-keyfeature-02@4x.png" width="361" height="361" alt="Villeroy &amp; Boch plate information displayed over a food photo" /></figure>
+                  <figure class="feature-scene" data-feature-scene="2" aria-hidden="true"><img src="./assets/n4028-keyfeature-03@4x.png" width="361" height="361" alt="All recipe and product markers displayed over a food photo" /></figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
   </body>
 </html>
