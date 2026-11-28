@@ -203,26 +203,77 @@
           </article>
 
           <article class="figma-feature feature-three">
-            <div class="feature-copy-exact feature-three-copy">
+            <div class="feature-card-copy feature-three-copy">
               <span class="feature-number">03</span>
-              <h3>View product information and recipes directly from photos</h3>
-              <p>Products in a photo display both the brand and product name and link to the lowest-price retailer when selected. The long-term business model was designed to support purchases directly in the app. Selecting a food marker opens its recipe: the creator’s linked recipe when available, or the search results for that dish otherwise.</p>
+              <h3>Writing Page</h3>
+              <p>The writing page mirrors the published result so creators can preview their content. Users also found features difficult to learn when they were split across multiple pages, so the tools available while writing were placed directly above the keyboard for immediate use.</p>
             </div>
-            <div class="feature-gray-panel feature-three-panel" aria-hidden="true"></div>
-
-            <div class="feature-writing-detail">
-              <img class="feature-writing-phone" src="./assets/n4028-feature-03-phone-display@3x.png" alt="MEALING recipe writing screen" />
-              <ol class="feature-writing-notes">
-                <li class="note-one">A writing page that matches the published result</li>
-                <li class="note-two">Hide optional fields</li>
-                <li class="note-three">Make input simple and convenient</li>
-              </ol>
-              <p class="feature-keyword-copy">Previously used keywords help users enter information quickly</p>
-              <div class="feature-keyword-crop"><img src="./assets/n4028-feature-03-keywords@3x.png" alt="Previously used keyword suggestions" /></div>
-              <p class="feature-toolbar-copy">Place writing tools directly above the keyboard</p>
-              <div class="feature-toolbar-crop"><img src="./assets/n4028-feature-03-toolbar@3x.png" alt="Writing tools above the keyboard" /></div>
+            <div class="feature-gray-panel feature-three-panel">
+              <div class="feature-device" aria-label="MEALING writing page">
+                <img class="feature-device-base" src="./assets/n4028-feature-03-writing@3x.png" alt="MEALING writing page" />
+                <img class="feature-device-toolbar" src="./assets/n4028-feature-03-toolbar@3x-v2.png" alt="Writing tools positioned above the keyboard" />
+              </div>
             </div>
           </article>
+
+          <article class="figma-feature feature-four">
+            <div class="feature-card-copy feature-four-copy">
+              <span class="feature-number">04</span>
+              <h3>My Page</h3>
+              <p>The writing page mirrors the published result so creators can preview their content. Users also found features difficult to learn when they were split across multiple pages, so the tools available while writing were placed directly above the keyboard for immediate use.</p>
+            </div>
+            <div class="feature-gray-panel feature-four-panel">
+              <div class="feature-device" aria-label="MEALING My Page">
+                <img class="feature-device-base" src="./assets/n4028-feature-03-writing@3x.png" alt="MEALING My Page screen" />
+                <img class="feature-device-toolbar" src="./assets/n4028-feature-03-toolbar@3x-v2.png" alt="Writing tools positioned above the keyboard" />
+              </div>
+            </div>
+          </article>
+
+          <section class="feature-ut" aria-labelledby="feature-ut-title">
+            <h3 id="feature-ut-title">UT</h3>
+            <p class="feature-test-intro">Continuous usability testing with target users and active customers</p>
+            <div class="feature-test-flow" aria-label="Usability testing process">
+              <span>1. Recruit participants</span><i></i>
+              <span>2. Design and analyze usability tests</span><i></i>
+              <span>3. Derive insights and refine the app</span>
+            </div>
+
+            <div class="ut-user-cards">
+              <article>
+                <h4>A. New users</h4>
+                <p>Interested in home cooking but not yet familiar with the app</p>
+                <ul><li>Identify difficulties during first-time use</li><li>Check whether labels and features are easy to understand</li></ul>
+              </article>
+              <article>
+                <h4>B. Active users</h4>
+                <p>Highly engaged with home cooking, using the app at least twice a week with prior publishing experience</p>
+                <ul><li>Confirm whether all features are understood</li><li>Identify issues perceived in the current UI</li></ul>
+              </article>
+            </div>
+
+            <div class="ut-session-images">
+              <img src="./assets/n4028-ut-session-a@3x.png" alt="Usability test participant navigating MEALING" />
+              <img src="./assets/n4028-ut-session-b@3x.png" alt="Usability test participant viewing a table page" />
+              <img src="./assets/n4028-ut-session-c@3x.png" alt="Usability test participant exploring the MEALING home screen" />
+            </div>
+
+            <div class="ut-insight-images">
+              <img src="./assets/n4028-ut-insight-a@3x.png" alt="Usability test insights for the table detail page" />
+              <img src="./assets/n4028-ut-insight-b@3x.png" alt="Refined usability test insights for the table detail page" />
+            </div>
+          </section>
+
+          <section class="feature-ab" aria-labelledby="feature-ab-title">
+            <h3 id="feature-ab-title">A/B Test</h3>
+            <p>Continuous usability testing with target users and active customers</p>
+            <div class="ab-panel">
+              <img class="ab-before" src="./assets/n4028-ab-before@3x.png" alt="Original CTA placement" />
+              <img class="ab-after" src="./assets/n4028-ab-after@3x.png" alt="Updated CTA placement" />
+              <span class="ab-connector" aria-hidden="true"></span>
+              <p>Tested CTA placement with Firebase<br />to guide users toward following.<br /><strong>Click-through rate increased 2.25×</strong></p>
+            </div>
+          </section>
         </section>
       </div>
     </main>
