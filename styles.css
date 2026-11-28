@@ -486,8 +486,9 @@ img { display: block; max-width: 100%; -webkit-user-drag: none; user-select: non
 .feature-two-screen { position: absolute; z-index: 2; max-width: none; object-fit: contain; }
 .feature-two-screen-a { top: 903px; left: 175px; width: 260px; height: 514px; }
 .feature-two-screen-b { top: 912px; left: 439px; width: 250px; height: 503px; }
-.feature-screen-arrow { position: absolute; z-index: 4; top: 967px; left: 404px; width: 47px; height: 1px; border-top: 1px solid #a20032; }
-.feature-screen-arrow::after { position: absolute; top: -4px; right: -1px; width: 7px; height: 7px; border-top: 1px solid #a20032; border-right: 1px solid #a20032; content: ""; transform: rotate(45deg); }
+.feature-screen-arrow-dot, .feature-screen-arrow { position: absolute; z-index: 4; max-width: none; }
+.feature-screen-arrow-dot { top: 961.02px; left: 399.42px; }
+.feature-screen-arrow { top: 961.48px; left: 404px; }
 .feature-card-copy { position: absolute; top: 1698px; width: 578px; color: #202020; }
 .feature-three-copy { left: 110px; }
 .feature-four-copy { left: 738px; }
