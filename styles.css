@@ -493,9 +493,33 @@ img { display: block; max-width: 100%; -webkit-user-drag: none; user-select: non
 .feature-four-copy { left: 738px; }
 .feature-card-copy h3 { margin: 0 0 18px; font-size: 20px; font-weight: 300; line-height: 30px; }
 .feature-card-copy p { margin: 0; font-size: 15px; font-weight: 300; line-height: 23px; }
-.feature-device { position: absolute; top: 65px; left: 147px; width: 227px; height: 582px; overflow: hidden; box-sizing: border-box; border: 5px solid #fff; border-radius: 20px; background: #fff; box-shadow: 0 4px 16px #d0d0d0; }
-.feature-device-base { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; object-fit: cover; }
-.feature-device-toolbar { position: absolute; top: 374px; left: -1px; width: 228px; height: 208px; max-width: none; object-fit: cover; }
+.feature-device { position: absolute; top: 65px; width: 227.58px; height: 581.58px; filter: drop-shadow(0 4px 16px #d0d0d0); }
+.feature-three-panel .feature-device { left: 175px; }
+.feature-four-panel .feature-device { left: 146px; }
+.feature-device-screen { position: absolute; top: 1.64px; left: 1px; width: 226.58px; height: 579.95px; overflow: hidden; border-radius: 15px; background: #fff; }
+.feature-device-screen img { position: absolute; top: -3.35%; left: -.12%; width: 100.1%; height: 117.43%; max-width: none; }
+.feature-device-photo { position: absolute; top: 40.29px; left: 1px; width: 226.58px; height: 225.25px; max-width: none; object-fit: cover; }
+.feature-device-tools { position: absolute; z-index: 2; top: 374px; left: 0; width: 227.4px; height: 207.36px; overflow: hidden; border-radius: 0 0 20px 20px; }
+.feature-tools-bg { position: absolute; top: 0; left: 0; width: 227.4px; height: 38.81px; max-width: none; }
+.feature-tools-keyboard { position: absolute; top: 38.86px; left: 0; width: 227.4px; height: 168.5px; max-width: none; }
+.feature-tool-buttons { position: absolute; top: 9.41px; left: 4.09px; display: flex; gap: 4px; height: 22px; font-family: "Roboto", "Inter", sans-serif; }
+.feature-tool-buttons span { display: flex; align-items: center; justify-content: center; height: 22px; box-sizing: border-box; padding: 0 8px; border: .8px solid #a20032; border-radius: 8px; background: #fff; color: #a20032; font-size: 10px; font-weight: 400; line-height: 1; white-space: nowrap; }
+.feature-tool-buttons span:nth-child(1) { width: 56.6px; }
+.feature-tool-buttons span:nth-child(2) { width: 60.6px; }
+.feature-tool-buttons span:nth-child(3) { width: 46.6px; }
+.feature-tool-buttons i { margin-right: 2px; font-style: normal; }
+.feature-tool-buttons b { font-weight: 700; }
+.feature-device-border { position: absolute; z-index: 3; inset: 0 0 0 1px; box-sizing: border-box; border: 5px solid #fff; border-radius: 20px; pointer-events: none; }
+.feature-four-panel .feature-tool-buttons { top: 9.41px; left: 4.09px; height: 22.9px; }
+.feature-four-panel .feature-tool-buttons span { height: 22.9px; padding: 0 8px; font-size: 12px; }
+.feature-four-panel .feature-tool-buttons span:nth-child(1) { width: 66px; }
+.feature-four-panel .feature-tool-buttons span:nth-child(2) { width: 75px; }
+.feature-four-panel .feature-tool-buttons span:nth-child(3) { width: 58px; }
+.feature-four-panel .feature-tool-buttons span:nth-child(1) i { font-size: 13px; }
+.feature-four-panel .feature-tool-buttons span:nth-child(2) { font-size: 13px; }
+.feature-four-panel .feature-tool-buttons span:nth-child(2) i { font-size: 14px; }
+.feature-four-panel .feature-tool-buttons span:nth-child(3) { font-size: 13px; }
+.feature-four-panel .feature-tool-buttons span:nth-child(3) b { font-size: 14px; }
 .feature-ut, .feature-ab { position: absolute; inset: 0; }
 .feature-ut > h3, .feature-ab > h3 { position: absolute; left: 110px; margin: 0; font-size: 15px; font-weight: 700; line-height: 25px; }
 .feature-ut > h3 { top: 2856px; }
